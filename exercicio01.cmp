@@ -1,0 +1,20 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <lightning:recordEditForm aura:id="recordEditForm" objectApiName="Lead">
+        <lightning:messages />
+        <div class="slds-box slds-theme_default">
+            <div class="slds-m-top_small">
+                <div class="slds-col slds-p-horizontal_medium">
+                    <lightning:inputField fieldName="LastName" />
+                </div>
+            </div>
+            <lightning:inputField fieldName="Company" />
+            <div class="slds-m-top_small">
+                <div class="slds-align_absolute-center">
+                    <div class="slds-m-bottom_medium">
+                        <lightning:button class="slds-m-top_small" type="submit" label="Create new" onclick="{!c.handleClick}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </lightning:recordEditForm>
+</aura:component>
